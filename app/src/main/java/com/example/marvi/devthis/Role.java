@@ -41,15 +41,26 @@ public class Role extends AppCompatActivity {
     public void playSound(View v) {
         final String currentRole = this.currentRole;
 
-        if (currentRole.equals("Reanimation")) {
+        if (currentRole.equals("Reanimatie")) {
               this.mp = MediaPlayer.create(this, R.raw.reanimation);
-        } else if (currentRole.equals("Fire")) {
+        } else if (currentRole.equals("Brand")) {
               this.mp = MediaPlayer.create(this, R.raw.fire);
         } else {
               this.mp = MediaPlayer.create(this, R.raw.evacuation);
         }
 
         mp.start();
+    }
+
+    public void goToTutorial(View v) {
+        final String currentRole = this.currentRole;
+
+        Intent intent = new Intent(this, Tutorial.class);
+
+        intent.putExtra("role", currentRole);
+
+        startActivity(intent);
+
     }
 
     @Override

@@ -16,8 +16,8 @@ public class Category extends AppCompatActivity {
     public void reanimationButtonClick(View v) {
         Intent intent = new Intent(this, Role.class);
 
-        String[] roleArray = new String[] {"Heart Message", "Breathing", "Clear Area"};
-        String role = "Reanimation";
+        String[] roleArray = new String[] {"Hart massage", "Ademhalen", "Omgeving veilig maken"};
+        String role = "Reanimatie";
 
         intent.putExtra("roles", roleArray);
         intent.putExtra("role", role);
@@ -28,8 +28,8 @@ public class Category extends AppCompatActivity {
     public void fireButtonClick(View v) {
         Intent intent = new Intent(this, Role.class);
 
-        String[] roleArray = new String[] {"Dose Fire", "Check Fire Status", "Evacuate"};
-        String role = "Fire";
+        String[] roleArray = new String[] {"Brand Blussen", "Bekijk brand status", "Evacueren"};
+        String role = "Brand";
 
         intent.putExtra("roles", roleArray);
         intent.putExtra("role", role);
@@ -40,8 +40,8 @@ public class Category extends AppCompatActivity {
     public void evacuationButtonClick(View v) {
         Intent intent = new Intent(this, Role.class);
 
-        String[] roleArray = new String[] {"Check Exits", "Inform People", "Escort People Out"};
-        String role = "Evacuation";
+        String[] roleArray = new String[] {"Wijs uitgangen aan", "Informeer mensen", "Begeleid mensen naar buiten"};
+        String role = "Evacuatie";
 
         intent.putExtra("roles", roleArray);
         intent.putExtra("role", role);
